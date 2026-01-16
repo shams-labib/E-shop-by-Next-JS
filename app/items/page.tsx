@@ -6,7 +6,7 @@ export default async function AllItemsPage() {
   const items = await fetchItems();
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] py-12 md:mt-20 mt-15">
+    <div className="min-h-screen bg-[#0a0a0a] py-12">
       <div className="max-w-7xl mx-auto px-4">
         <h1 className="text-4xl font-bold text-white mb-10">
           Our Entire <span className="text-blue-500">Collection</span>

@@ -20,7 +20,7 @@ export default function HomePage() {
 
       {/* Content Container */}
       <div className="relative z-10">
-        <section className="md:mt-20 mt-30">
+        <section className="">
           <Hero />
         </section>
         <section>
