@@ -4,8 +4,8 @@ import { Eye, ShoppingCart } from "lucide-react";
 export default function ItemCard({ id, name, price, image, description }: any) {
   return (
     <div className="group relative bg-white/[0.03] border border-white/10 rounded-2xl overflow-hidden hover:border-blue-500/50 transition-all duration-300 flex flex-col h-full">
-      {/* Product Image */}
-      <div className="relative h-48 bg-white/[0.05] overflow-hidden">
+      {/* Product Image - মোবাইলে h-32 এবং বড় স্ক্রিনে h-48 */}
+      <div className="relative h-32 md:h-48 bg-white/[0.05] overflow-hidden">
         <img
           src={
             image ||
