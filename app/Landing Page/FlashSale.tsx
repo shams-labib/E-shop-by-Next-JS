@@ -31,7 +31,7 @@ const FlashSale = () => {
       price: "$899",
       oldPrice: "$1199",
       image:
-        "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&q=80&w=400",
+        "https://i.ibb.co.com/N2YLwZ3z/ft-DV5jz4-RD7-Wd-Uea-Vu-Radb-1200-80.jpg",
       sold: 85,
     },
     {
@@ -39,8 +39,7 @@ const FlashSale = () => {
       name: "iPhone 15 Pro",
       price: "$999",
       oldPrice: "$1099",
-      image:
-        "https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&q=80&w=400",
+      image: "https://i.ibb.co.com/RfWMBwq/i-Phone-15-Pro-Max-Main-Image.jpg",
       sold: 45,
     },
     {
@@ -49,7 +48,7 @@ const FlashSale = () => {
       price: "$89",
       oldPrice: "$129",
       image:
-        "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&q=80&w=400",
+        "https://i.ibb.co.com/1G5fFzrg/logitech-g-pro-x-superlight-wireless-gaming-mouse-500x500.jpg",
       sold: 92,
     },
   ];

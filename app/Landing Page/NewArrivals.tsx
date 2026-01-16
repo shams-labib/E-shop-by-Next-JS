@@ -8,16 +8,14 @@ const products = [
     name: "Sony PS5 Controller",
     price: "$69",
     rating: 4.8,
-    image:
-      "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?q=80&w=400",
+    image: "https://i.ibb.co.com/FLYQxZWJ/dualsense-1-500x500.jpg",
   },
   {
     id: 2,
     name: "Apple Watch Series 9",
     price: "$399",
     rating: 4.9,
-    image:
-      "https://images.unsplash.com/photo-1546868871-70c122469d8b?q=80&w=400",
+    image: "https://i.ibb.co.com/KpHqx7qf/Apple-Watch-Series-9-Starlight.jpg",
   },
   {
     id: 3,
@@ -25,15 +23,14 @@ const products = [
     price: "$549",
     rating: 4.7,
     image:
-      "https://images.unsplash.com/photo-1613040819283-b6019672f026?q=80&w=400",
+      "https://i.ibb.co.com/dJbM4krp/airpods-max-usb-c-midnight-mww43za-a.jpg",
   },
   {
     id: 4,
     name: "Dell XPS 13 Laptop",
     price: "$1299",
     rating: 4.6,
-    image:
-      "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?q=80&w=400",
+    image: "https://i.ibb.co.com/wN8s8844/xps-13-7390-front-500x500.png",
   },
 ];
 
