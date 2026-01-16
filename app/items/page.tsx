@@ -1,24 +1,21 @@
+// app/items/page.tsx
 import ItemCard from "@/components/Itemcard";
 import { fetchItems } from "../../lib/fetchItems";
 
-export default async function ItemsPage() {
+export default async function AllItemsPage() {
   const items = await fetchItems();
 
-  if (!items.length) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <p className="text-red-500 text-lg">No items found 😢</p>
-      </div>
-    );
-  }
-
   return (
-    <div className="max-w-7xl mx-auto px-4 py-10">
-      <h1 className="text-3xl font-bold mb-8">All Items</h1>
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {items.map((item) => (
-          <ItemCard key={item.id} {...item} />
-        ))}
+    <div className="min-h-screen bg-[#0a0a0a] py-12 md:mt-20 mt-15">
+      <div className="max-w-7xl mx-auto px-4">
+        <h1 className="text-4xl font-bold text-white mb-10">
+          Our Entire <span className="text-blue-500">Collection</span>
+        </h1>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          {items.map((item: any) => (
+            <ItemCard key={item.id} {...item} />
+          ))}
+        </div>
       </div>
     </div>
   );
