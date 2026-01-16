@@ -8,7 +8,7 @@ export interface Item {
 
 export const fetchItems = async (): Promise<Item[]> => {
   try {
-    const res = await fetch("http://localhost:5000/items", {
+    const res = await fetch("https://e-shop-server-lake.vercel.app/items", {
       cache: "no-store",
       next: { revalidate: 0 }, // force fresh fetch
     });
@@ -23,10 +23,13 @@ export const fetchItems = async (): Promise<Item[]> => {
 
 export const fetchItemById = async (id: string): Promise<Item | null> => {
   try {
-    const res = await fetch(`http://localhost:5000/items/${id}`, {
-      cache: "no-store",
-      next: { revalidate: 0 },
-    });
+    const res = await fetch(
+      `https://e-shop-server-lake.vercel.app/items/${id}`,
+      {
+        cache: "no-store",
+        next: { revalidate: 0 },
+      }
+    );
     if (!res.ok) return null;
     return res.json();
   } catch (err) {
