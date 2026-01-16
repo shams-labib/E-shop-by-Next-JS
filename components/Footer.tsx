@@ -9,7 +9,6 @@ import {
   Mail,
   Phone,
   MapPin,
-  Github,
   Youtube,
 } from "lucide-react";
 
@@ -17,11 +16,11 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-transparent border-t border-white/5 pt-16 md:pt-24 pb-8 relative overflow-hidden">
-      {/* Decorative Glow */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent"></div>
+    <footer className="bg-zinc-950 text-zinc-400 border-t border-zinc-800/50 pt-16 md:pt-24 pb-8 relative overflow-hidden">
+      {/* Subtle Radial Gradient for Depth */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-blue-500/5 via-transparent to-transparent pointer-events-none"></div>
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 relative z-10">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
           {/* Brand Info */}
@@ -29,7 +28,7 @@ const Footer = () => {
             <h2 className="text-3xl font-black text-white tracking-tighter italic">
               Next<span className="text-blue-500">Items</span>
             </h2>
-            <p className="text-gray-500 text-sm leading-relaxed max-w-xs mx-auto sm:mx-0 font-medium">
+            <p className="text-zinc-500 text-sm leading-relaxed max-w-xs mx-auto sm:mx-0 font-medium">
               Ultimate destination for premium electronics. We redefine your
               tech lifestyle with 100% genuine gadgets.
             </p>
@@ -43,7 +42,7 @@ const Footer = () => {
                 <Link
                   key={i}
                   href={social.href}
-                  className="p-3 bg-white/[0.03] border border-white/5 rounded-xl hover:bg-blue-600 hover:text-white hover:-translate-y-1 transition-all duration-300"
+                  className="p-3 bg-zinc-900 border border-zinc-800 rounded-xl text-zinc-400 hover:bg-blue-600 hover:text-white hover:border-blue-500 hover:-translate-y-1 transition-all duration-300"
                 >
                   {social.icon}
                 </Link>
@@ -53,10 +52,10 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="text-center sm:text-left">
-            <h3 className="text-white font-black uppercase tracking-widest text-xs mb-8">
+            <h3 className="text-white font-bold uppercase tracking-widest text-[11px] mb-8">
               Navigation
             </h3>
-            <ul className="space-y-4 text-gray-500 text-sm font-bold">
+            <ul className="space-y-4 text-sm">
               {[
                 "All Products",
                 "Featured Items",
@@ -75,12 +74,12 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Support */}
+          {/* Company */}
           <div className="text-center sm:text-left">
-            <h3 className="text-white font-black uppercase tracking-widest text-xs mb-8">
+            <h3 className="text-white font-bold uppercase tracking-widest text-[11px] mb-8">
               Company
             </h3>
-            <ul className="space-y-4 text-gray-500 text-sm font-bold">
+            <ul className="space-y-4 text-sm">
               {[
                 "Help Center",
                 "Privacy Policy",
@@ -101,51 +100,51 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="space-y-6 text-center sm:text-left">
-            <h3 className="text-white font-black uppercase tracking-widest text-xs mb-8">
+            <h3 className="text-white font-bold uppercase tracking-widest text-[11px] mb-8">
               Contact
             </h3>
-            <div className="space-y-4">
-              <div className="flex items-start justify-center sm:justify-start gap-3 text-gray-500 text-sm font-bold">
+            <div className="space-y-5">
+              <div className="flex items-start justify-center sm:justify-start gap-3 text-sm">
                 <MapPin className="w-5 h-5 text-blue-500 shrink-0" />
-                <span>
+                <span className="text-zinc-400">
                   Dhanmondi 32, Dhaka,
                   <br /> Bangladesh
                 </span>
               </div>
-              <div className="flex items-center justify-center sm:justify-start gap-3 text-gray-500 text-sm font-bold">
+              <div className="flex items-center justify-center sm:justify-start gap-3 text-sm">
                 <Phone className="w-5 h-5 text-blue-500 shrink-0" />
-                <span>+880 1234 567890</span>
+                <span className="text-zinc-400">+880 1234 567890</span>
               </div>
-              <div className="flex items-center justify-center sm:justify-start gap-3 text-gray-500 text-sm font-bold">
+              <div className="flex items-center justify-center sm:justify-start gap-3 text-sm">
                 <Mail className="w-5 h-5 text-blue-500 shrink-0" />
-                <span>hello@nextitems.com</span>
+                <span className="text-zinc-400">hello@nextitems.com</span>
               </div>
             </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-gray-600 text-[10px] md:text-xs font-black uppercase tracking-[0.2em]">
-            © {currentYear} <span className="text-white">NextItems</span>. Built
-            for the future.
+        <div className="border-t border-zinc-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+          <p className="text-zinc-600 text-[10px] font-bold uppercase tracking-[0.2em]">
+            © {currentYear} <span className="text-zinc-300">NextItems</span>.
+            All rights reserved.
           </p>
 
-          <div className="flex items-center gap-6 md:gap-8 opacity-40 hover:opacity-100 transition-opacity duration-500">
+          <div className="flex items-center gap-6 md:gap-8 grayscale opacity-50 hover:opacity-100 transition-all duration-500">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"
               alt="Paypal"
-              className="h-3 md:h-4 grayscale"
+              className="h-3 md:h-4"
             />
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"
               alt="Mastercard"
-              className="h-5 md:h-7 grayscale"
+              className="h-5 md:h-6"
             />
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"
               alt="Visa"
-              className="h-3 md:h-4 grayscale"
+              className="h-3 md:h-4"
             />
           </div>
         </div>
