@@ -34,18 +34,20 @@ const Navbar = () => {
   ];
 
   return (
-    // z-[999] use kora hoyeche jate Hero section er upor thake
+    /* এখনে fixed এর বদলে sticky ব্যবহার করা হয়েছে এবং নেভবারটিকে 
+       একটি নির্দিষ্ট ব্যাকগ্রাউন্ড দেওয়া হয়েছে যাতে নিচের কন্টেন্ট দেখা না যায়।
+    */
     <header
-      className={`fixed top-0 left-0 w-full z-[999] transition-all duration-500 pointer-events-none ${
-        scrolled ? "py-2 md:py-4" : "py-4 md:py-6"
+      className={`sticky top-0 w-full z-[999] transition-all duration-500 bg-[#0a0a0a] ${
+        scrolled ? "py-2 md:py-3" : "py-4 md:py-5"
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pointer-events-auto">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
-          className={`relative px-4 md:px-8 rounded-[1.5rem] md:rounded-full border border-white/10 bg-[#0a0a0a]/80 backdrop-blur-xl transition-all duration-500 ${
+          className={`relative px-4 md:px-8 rounded-2xl md:rounded-full border border-white/10 bg-[#111111]/90 backdrop-blur-xl transition-all duration-500 ${
             scrolled
-              ? "shadow-[0_20px_50px_rgba(0,0,0,0.5)] border-blue-500/30 py-1"
-              : "shadow-none py-2"
+              ? "shadow-[0_20px_50px_rgba(0,0,0,0.5)] border-blue-500/30"
+              : "shadow-none"
           }`}
         >
           <div className="flex justify-between items-center h-14 md:h-16">
@@ -116,7 +118,7 @@ const Navbar = () => {
 
         {/* Mobile Dropdown */}
         <div
-          className={`lg:hidden absolute top-20 left-4 right-4 bg-[#0a0a0a]/95 backdrop-blur-2xl border border-white/10 p-6 rounded-[2rem] shadow-[0_30px_60px_rgba(0,0,0,0.8)] transition-all duration-500 origin-top ${
+          className={`lg:hidden absolute top-[calc(100%+10px)] left-4 right-4 bg-[#0a0a0a]/95 backdrop-blur-2xl border border-white/10 p-6 rounded-[2rem] shadow-[0_30px_60px_rgba(0,0,0,0.8)] transition-all duration-500 origin-top ${
             isOpen
               ? "scale-100 opacity-100 translate-y-0"
               : "scale-95 opacity-0 -translate-y-4 pointer-events-none"
