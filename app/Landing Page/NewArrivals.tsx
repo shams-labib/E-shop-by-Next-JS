@@ -38,7 +38,6 @@ const NewArrivals = () => {
   return (
     <section className="py-16 md:py-24 bg-transparent">
       <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-        {/* Header Section */}
         <div className="flex justify-between items-end mb-10 md:mb-14">
           <div className="space-y-2">
             <div className="flex items-center gap-2 text-blue-500 font-bold uppercase tracking-[0.2em] text-[10px]">
