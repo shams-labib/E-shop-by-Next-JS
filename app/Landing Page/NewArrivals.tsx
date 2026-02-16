@@ -52,7 +52,7 @@ const NewArrivals = () => {
           </button>
         </div>
 
-        {/* Responsive Grid: 2 columns on mobile, 4 on desktop */}
+        {/* Responsive Grid: 2 columns on mobile, 4 on  */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
           {products.map((p) => (
             <div
